@@ -7,10 +7,10 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Header from '../header/Header.js'
 import Indexx from './Index.js'
 
-class Layout extends React.Component {
+class App extends React.Component {
   render(){
     return(
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
           <Header />
           <Indexx />
@@ -22,4 +22,4 @@ class Layout extends React.Component {
 
 const app = document.getElementById('app');
 
-ReactDom.render(<Layout/>, app);
+ReactDom.render(<App/>, app);
