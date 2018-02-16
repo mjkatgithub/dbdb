@@ -3,9 +3,10 @@ import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import './app.css';
 
 import Header from '../header/Header.js'
-import Indexx from './Index.js'
+import Home from '../home/Home.js'
 
 class App extends React.Component {
   render(){
@@ -13,7 +14,7 @@ class App extends React.Component {
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
           <Header />
-          <Indexx />
+          <Home />
         </div>
       </MuiThemeProvider>
     );
