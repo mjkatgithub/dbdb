@@ -4,6 +4,12 @@ var path = require("path");
 var DIST_DIR = path.resolve(__dirname, "dist");
 var SRC_DIR = path.resolve(__dirname, "src");
 
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+// Create multiple instances
+const extractCSS = new ExtractTextPlugin('stylesheets/foo-one.css');
+const extractSASS = new ExtractTextPlugin('stylesheets/bar-two.css');
+
 var config = {
   entry: SRC_DIR + "/app/App.js",
   output: {
@@ -23,13 +29,18 @@ var config = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: extractCSS.extract([ 'css-loader', 'postcss-loader' ])
+      },
+      {
+        test: /\.less$/i,
+        use: extractSASS.extract([ 'css-loader', 'sass-loader' ])
       }
     ]
-  }
+  },
+  plugins: [
+    extractCSS,
+    extractSASS
+  ]
 };
 
 module.exports = config;
