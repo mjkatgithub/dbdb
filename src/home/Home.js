@@ -1,12 +1,13 @@
 import React from 'react';
 import FlatButton from 'material-ui/FlatButton';
 import './home.css';
+import Avatar from './avatar.png';
 
 class Home extends React.Component {
   render(){
     return(
       <div className="home">
-        <img src="https://raw.githubusercontent.com/mjkatgithub/d-bot/master/img/avatar.png"
+        <img src={Avatar}
           alt={"logo"}
           width="250" />
         <h2>Welcome To D-Bot 2.0</h2>

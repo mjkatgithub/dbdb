@@ -32,8 +32,14 @@ var config = {
         use: extractCSS.extract([ 'css-loader', 'postcss-loader' ])
       },
       {
-        test: /\.less$/i,
+        test: /\.scss$/i,
         use: extractSASS.extract([ 'css-loader', 'sass-loader' ])
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
       }
     ]
   },
