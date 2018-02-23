@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "D-Bots Dashboard",
   "scripts": {
+    "test": "mocha",
     "start": "npm run build",
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 8080",
     "build:prod": "webpack -p && cp src/index.html dist/index.html"
@@ -32,6 +33,7 @@
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.9",
+    "mocha": "^5.0.1",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
