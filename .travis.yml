@@ -8,6 +8,7 @@ install: npm install
 script:
 - npm run test
 - npm run build:prod
+postinstall: npm run build:prod
 cache:
   directories:
   - node_modules
