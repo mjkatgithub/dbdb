@@ -1,12 +1,20 @@
 language: node_js
 node_js:
-  - 8
-  - 9
+- 8
+- 9
 before_install:
-  - npm i -g npm@5.6.0
+- npm i -g npm@5.6.0
 install: npm install
-script: npm test
-
+script:
+- npm run test
+- npm run build:prod
 cache:
   directories:
-    - "node_modules"
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: Ccq7YfolkIH/2Ueu41qlLkwSGiZhK/YSK9eJT0UiCRD/hXsZ7k5spaY6NF/AJ/uLV5MwtZRc9K5x3HDXiePL3MHQCu4AExJyQY/jCLck3S5qUe6/+tzUApZhQ1sVhBdtg/i3qjPP+FYqlaNEHW5PGgmx/+n7d0q9FAs91icJzUS5P6SQazcpPkNTjAz3xFypSVLaMAtxJZ0VLxSFUJrv/W6WGgcztE8nZ5axWfUK3uaaObzsdN0D24ZWMRcu5GCvPsWVttP8HlU/iJEKqFV9FRKbZMFdvTECRL7xnVL0I5uLKEjge4ZpD7g5qiC7EHQv3VF+SeGq4+mUkA1uHKooCKkGlXji2b9jGaxrltzf3hEoYu4fZ4BzWW6VX/Ccd45aqr5wp1F0/ccuJR3XAy0ay5XSfPyyBF8p2rF4JSk51PAvWSwtpD/edWR4O+AEcih7mY+Qoj1NhTsKOCYscLyxDY5k/Djxb1ts/hk6cQFFrYY6dqeky/EhxUlQzDlmgmwr4z1oatn2IlizEByJhPLuCfNFo4UZQGqMTBeFGzKSV3ERdZTzvDVj1tgzTPrDg/6LZSDuboup74AX0LfZg8BBUsWJ2qv4bzH25uhk/jM+pbFjqBzUrmA3MV5bN+30dUK19dnbFtrl670WkGUA+E3j6znJAnHktbyTyqCSOJlcH0o=
+  app: d-bot-website
+  on:
+    repo: mjkatgithub/dbdb

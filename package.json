@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "D-Bots Dashboard",
   "scripts": {
+    "postinstall": "webpack",
     "test": "mocha",
     "start": "npm run build",
     "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 8080",
