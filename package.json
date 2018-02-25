@@ -2,6 +2,7 @@
   "name": "dbdb",
   "version": "0.1.0",
   "description": "D-Bots Dashboard",
+  "main": "index.html",
   "scripts": {
     "postinstall": "npm run build:prod",
     "test": "mocha",
