@@ -1,7 +1,7 @@
 {
-  "name": "dbdb",
+  "name": "kicky-web",
   "version": "0.1.0",
-  "description": "D-Bots Dashboard",
+  "description": "Kickys website / Dashboard",
   "main": "index.html",
   "scripts": {
     "postinstall": "npm run build:prod",
