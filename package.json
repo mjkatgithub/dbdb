@@ -7,8 +7,8 @@
     "postinstall": "npm run build:prod",
     "test": "mocha",
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 8080",
-    "build:prod": "webpack -d && cp src/index.html dist/index.html"
+    "build": "webpack -d && cp src/index.html dist/index.html && cp src/favicon.ico dist/favicon.ico && webpack-dev-server --content-base src/ --inline --hot --port 8080",
+    "build:prod": "webpack -d && cp src/index.html dist/index.html && cp src/favicon.ico dist/favicon.ico"
   },
   "keywords": [],
   "author": "",
