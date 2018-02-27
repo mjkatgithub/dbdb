@@ -18,3 +18,8 @@ deploy:
   app: kicky-home
   on:
     repo: mjkatgithub/kicky-web
+# safelist
+branches:
+  only:
+  - master
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
