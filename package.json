@@ -7,7 +7,7 @@
     "postinstall": "npm run build:prod",
     "test": "mocha",
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base dist/ --inline --hot --port 8080",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 8080",
     "build:prod": "webpack -d && cp src/index.html dist/index.html"
   },
   "keywords": [],
