@@ -4,7 +4,7 @@ import './home.css';
 import Avatar from './avatar.png';
 
 //TODO Fetch version from github
-let botVersion = '2.0';
+let botVersion = '3.0';
 
 class Home extends React.Component {
   render(){
@@ -17,6 +17,7 @@ class Home extends React.Component {
         <h3>A bot for your Discord Server</h3>
         <FlatButton label="Invite" target="_blank" href="https://discordapp.com/api/oauth2/authorize?client_id=384572972851265538&permissions=8&scope=bot" />
         <FlatButton label="Discord" target="_blank" href="https://discord.gg/6VpxTbY" />
+        <hr />
       </div>
     );
   }
