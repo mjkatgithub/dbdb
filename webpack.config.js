@@ -7,8 +7,8 @@ var SRC_DIR = path.resolve(__dirname, "src");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 // Create multiple instances
-const extractCSS = new ExtractTextPlugin('css/styles-one.css');
-const extractSASS = new ExtractTextPlugin('css/styles-two.css');
+const extractCSS = new ExtractTextPlugin('css/[name]-one.css');
+const extractSASS = new ExtractTextPlugin('css/[name]-two.css');
 
 var config = {
   entry: SRC_DIR + "/app/App.js",
