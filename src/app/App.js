@@ -6,7 +6,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import './app.css';
 
 import Header from '../header/Header.js'
-import Home from '../home/Home.js'
+import HomeContainer from '../home/HomeContainer.js'
 
 class App extends React.Component {
   render(){
@@ -14,7 +14,7 @@ class App extends React.Component {
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div>
           <Header />
-          <Home />
+          <HomeContainer />
         </div>
       </MuiThemeProvider>
     );
