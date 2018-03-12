@@ -7,7 +7,7 @@
     "postinstall": "npm run build:prod",
     "test": "mocha",
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && cp src/favicon.ico dist/favicon.ico && webpack-dev-server --content-base src/ --inline --hot --port 8080",
+    "build": "webpack -d && cp src/index.html dist/index.html && cp src/favicon.ico dist/favicon.ico && webpack-dev-server --content-base src/ --inline --hot --port 8080 --history-api-fallback",
     "build:prod": "webpack -d && cp src/index.html dist/index.html && cp src/favicon.ico dist/favicon.ico"
   },
   "keywords": [],
@@ -34,6 +34,8 @@
     "postcss-loader": "^2.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-ga": "^2.4.1",
+    "react-router": "^3.0.0",
     "sass-loader": "^6.0.6",
     "serve": "^6.5.0",
     "style-loader": "^0.20.2",
