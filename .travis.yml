@@ -19,7 +19,7 @@ deploy:
     develop: kicky-home-staging
     master: kicky-home
   on:
-    repo: mjkatgithub/kicky-web
+    repo: better-live-movement/kicky-web
 # safelist
 branches:
   only:
