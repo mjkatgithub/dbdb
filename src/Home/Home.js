@@ -4,8 +4,17 @@ import FlatButton from 'material-ui/FlatButton';
 import './home.css';
 import './home.scss';
 import Avatar from './avatar.png';
+import ReactGA from 'react-ga';
 
 class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      someData: null,
+    };
+    ReactGA.initialize('UA-59768657-2');
+    ReactGA.pageview(window.location.pathname);
+  }
   render(){
     return(
       <div className="home">
