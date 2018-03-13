@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.2.0] - 2018-03-13
+### Added
+- feature list
+- google-analytics to improve your experience
+
 ## [0.1.0] - 2018-02-27
 ### Added
 - basic website with invite and discord link
