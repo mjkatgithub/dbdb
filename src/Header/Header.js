@@ -45,7 +45,7 @@ Logged.muiName = 'IconMenu';
 
 class Header extends React.Component {
   state = {
-    logged: true,
+    logged: false,
   };
 
   handleChange = (event, logged) => {
