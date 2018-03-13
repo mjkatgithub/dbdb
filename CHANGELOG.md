@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - feature list
+- google-analytics to improve your experience
 
 ## [0.1.0] - 2018-02-27
 ### Added
