@@ -15,7 +15,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjkatgithub/dbdb"
+    "url": "https://github.com/better-live-movement/kicky-web"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
