@@ -11,15 +11,15 @@ postinstall: npm run build:prod
 cache:
   directories:
   - node_modules
-deploy:
-  provider: heroku
-  api_key:
-    secure: gGvuwazYzvGs3MGoleTWHHaCp2WfIt39tL3DpnO54yI1wpguykW1YcMAmSPxPCgyDqNRNtLXH/u44Xh9SeCmabTRdIbm0RVlxAjqoLka4kzUuJiLoZ60tzLm9DNmrsNsJMFKzgOMODG392wwOcMyae9CGYDl8pHvPhhgTGvVEuKoDpd4+OfMPZyqFvvepWMDpvIIjL7EjLM8W+2v+DqyUt3ttOteTNHo8G5rTc8MEclpfgqSlbF+a/65XcJJE12WPJP3XP6ocHke10OjyS1/RaiSyarNQS2n+usE8TqdVAQU5Vvyse0iUysYObl4VIMYIadvT6vBHno0HzJGWhNIiTFREAGTzcYidt7IItt3jmap+QFvvIQN5PKobBHcHeeXUG93mV275Sy7F52BweZI7ge18Fv/2qiHfvEYbXYVuCbSHBV4Oyrd91hpYHrsYdyaqjdUYxjgfMc7sbuIpKlHkQPiOhHR8yVAIo3g5B9kmG0nqoGmx+zv/85Db8NC+/jzuaoHmBucXUiM8+maSnJtrItqGRlHoNQk3A5+4LVIvimBuMh4RcWiKOVqvVQKkpSvnZDaBeiTaTYLntWmnQZPj3oUuNY5D7fwVQZcqier3+jbKD8dyNzdC4dgszNez+MPwGpDtSvtpYqCFvuY7H6KNgI63+hiTv6GYhaBAp+icAM=
-  app:
-    develop: kicky-home-staging
-    master: kicky-home
-  on:
-    repo: better-live-movement/kicky-web
+#deploy:
+#  provider: heroku
+#  api_key:
+#    secure: gGvuwazYzvGs3MGoleTWHHaCp2WfIt39tL3DpnO54yI1wpguykW1YcMAmSPxPCgyDqNRNtLXH/u44Xh9SeCmabTRdIbm0RVlxAjqoLka4kzUuJiLoZ60tzLm9DNmrsNsJMFKzgOMODG392wwOcMyae9CGYDl8pHvPhhgTGvVEuKoDpd4+OfMPZyqFvvepWMDpvIIjL7EjLM8W+2v+DqyUt3ttOteTNHo8G5rTc8MEclpfgqSlbF+a/65XcJJE12WPJP3XP6ocHke10OjyS1/RaiSyarNQS2n+usE8TqdVAQU5Vvyse0iUysYObl4VIMYIadvT6vBHno0HzJGWhNIiTFREAGTzcYidt7IItt3jmap+QFvvIQN5PKobBHcHeeXUG93mV275Sy7F52BweZI7ge18Fv/2qiHfvEYbXYVuCbSHBV4Oyrd91hpYHrsYdyaqjdUYxjgfMc7sbuIpKlHkQPiOhHR8yVAIo3g5B9kmG0nqoGmx+zv/85Db8NC+/jzuaoHmBucXUiM8+maSnJtrItqGRlHoNQk3A5+4LVIvimBuMh4RcWiKOVqvVQKkpSvnZDaBeiTaTYLntWmnQZPj3oUuNY5D7fwVQZcqier3+jbKD8dyNzdC4dgszNez+MPwGpDtSvtpYqCFvuY7H6KNgI63+hiTv6GYhaBAp+icAM=
+#  app:
+#    develop: kicky-home-staging
+#    master: kicky-home
+#  on:
+#    repo: better-live-movement/kicky-web
 # safelist
 branches:
   only:
