@@ -37,7 +37,7 @@
     "react-ga": "^2.5.7",
     "react-router": "^3.0.0",
     "sass-loader": "^6.0.7",
-    "serve": "^6.5.5",
+    "serve": "^10.1.2",
     "style-loader": "^0.20.3",
     "sugarss": "^1.0.1",
     "webpack": "^3.12.0"
